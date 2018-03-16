@@ -1,0 +1,606 @@
+@charset "utf-8";
+/*
+	Author: Filip Todorov - www.filiptodorov.com
+	Project: XX
+	All rights reserved
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+body, html {
+    font-family: sans-serif;
+    position: relative;
+}
+
+/* NAVIGATION */
+.navbar.navbar-dark {
+    padding-bottom: 90px;
+    padding-top: 15px;
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+    -webkit-transition: 0.3s ease transform;
+    -o-transition: 0.3s ease transform;
+    transition: 0.3s ease transform;
+    position: absolute;
+    width: 100%;
+    z-index: 9;
+}
+.navbar.navbar-dark.scrolled {
+    transform: translateY(-50px);
+}
+.navbar.navbar-dark.active {
+    position: fixed;
+    transform: translateY(0px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #343a40;
+}
+.navbar .navbar-brand {
+    
+}
+.navbar .navbar-brand img {
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.navbar .navbar-brand span {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.navbar .nav-item > .nav-link {
+    color: rgba(255,255,255,0.8);
+    padding: 0px 15px;
+}
+.navbar .nav-item > .nav-link:hover,
+.navbar .nav-item > .nav-link:focus {
+    color: #fff;
+}
+.navbar .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+/* MAIN */
+.main {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/bg.jpg') center no-repeat;
+    background-size: cover;
+    padding: 250px 0px 180px 0px;
+    color: #fff;
+    overflow: hidden;
+}
+.main.v2 {
+    background: url('../img/bg2.jpg') center no-repeat;
+    background-size: cover;
+    padding: 150px 0px 80px 0px;
+}
+.main.v3 {
+    background: url('../img/bg3.jpg') center no-repeat;
+    background-size: cover;
+    padding: 150px 0px 80px 0px;
+}
+.main.v4 {
+    background: url('../img/bg4.jpg') center no-repeat;
+    background-size: cover;
+    padding: 150px 0px 80px 0px;
+}
+.main .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #000;
+    opacity: 0.5;
+}
+.main .container {
+    position: relative;
+    z-index: 2;
+}
+.main h1 {
+    font-size: 56px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.main p.lead {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+.main .btn-primary {
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+}
+.main .btn-default {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(255,255,255,0.85);
+}
+.main form,
+.main .class-top {
+    display: block;
+    padding: 25px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: rgba(0,0,0,0.1) 0px 5px 15px;
+}
+.main form .form-group label {
+    color: #999;
+}
+.main form .form-group .form-control {
+    font-size: 14px;
+}
+.main form p {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+    font-weight: normal;
+    padding-bottom: 25px;
+}
+.main .class-top {
+    padding: 20px 25px;
+    margin-bottom: -50px;
+}
+.main .class-top ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.main .class-top ul li {
+    display: block;
+    padding: 5px 0px;
+}
+.main .class-top ul li img {
+    width: 32px;
+    display: inline-block;
+    vertical-align: middle;
+    opacity: 0.06;
+}
+.main .class-top ul li .class-top-info {
+    display: inline-block;
+    vertical-align: middle;
+    width: calc(100% - 47px);
+    padding-left: 15px;
+    margin-left: 15px;
+    border-left: 1px solid #eee;
+    color: #000;
+}
+.main .class-top ul li .class-top-info span {
+    display: block;
+    margin: 0;
+    font-size: 12px;
+    color: #999;
+    opacity: 0.65;
+    cursor: default;
+}
+.main .class-top ul li .class-top-info h2 {
+    display: block;
+    margin: 0;
+    font-size: 14px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+/* FEATURES */
+.features {
+    display: block;
+    position: relative;
+    padding: 80px 0px;
+    text-align: center;
+}
+.features img {
+    width: 64px;
+    margin: auto;
+    display: block;
+}
+.features h2 {
+    display: block;
+    margin: 15px 0px;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0px 25px;
+    cursor: default;
+}
+.features p {
+    margin: 0;
+    font-size: 13px;
+    color: #999;
+}
+
+/* REVIEWS */
+.reviews {
+    display: block;
+    position: relative;
+    padding: 80px 0px 40px 0px;
+    background: #f2f2f2;
+    text-align: center;
+}
+.reviews .review p {
+    font-size: 17px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif;
+    cursor: default;
+    margin-bottom: 30px;
+    padding: 0px 50px;
+}
+.reviews .review .person img {
+    width: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+.reviews .review .person span {
+    display: block;
+    vertical-align: middle;
+    font-weight: bold;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.reviews .arrow {
+    font-size: 44px;
+    color: #999;
+    opacity: 0.3;
+}
+.reviews .arrow:hover,
+.reviews .arrow:focus {
+    opacity: 0.6;
+}
+.partners {
+    display: block;
+    padding: 0px 0px 40px 0px;
+    background: #f2f2f2;
+}
+
+/* FOOTER */
+footer {
+    display: block;
+    padding: 20px 0px;
+    color: #999;
+    background: #343a40;
+    font-size: 12px;
+}
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: block;
+    text-align: right;
+}
+footer ul li {
+    display: inline-block;
+    margin-left: 10px;
+}
+footer ul li a {
+    color: #999;
+    font-size: 16px;
+    margin-top: -2px;
+    margin-bottom: -2px;
+    display: block;
+}
+footer ul li a:hover,
+footer ul li a:focus {
+    color: #fff;
+}
+
+/* FAQ */
+.faq {
+    display: block;
+    padding: 60px 0px;
+    position: relative;
+}
+.faq h2 {
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0px;
+    padding: 0px 15%;
+    font-family: 'Open Sans', sans-serif;
+}
+.faq .card {
+    border-radius: 0px;
+    margin-bottom: 15px;
+    border: none;
+}
+.faq .card-header {
+    border-radius: 0px;
+    background: none;
+    padding: 0;
+    border: none;
+}
+.faq .btn-link {
+    display: block;
+    width: 100%;
+    text-align: left;
+    color: #007bff;
+    font-weight: normal;
+    font-size: 18px;
+    padding: 0px;
+    padding-left: 25px;
+    position: relative;
+}
+.faq .btn-link:after,
+.faq .btn-link:before {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    left: 8px;
+    width: 2px;
+    height: 20px;
+    content: ' ';
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+}
+.faq .btn-link.collapsed:after {
+    background: #f1f1f1;
+    transform: rotate(0deg);
+}
+.faq .btn-link.collapsed:before {
+    background: #f1f1f1;
+    transform: rotate(90deg);
+}
+.faq .btn-link:after {
+    transform: rotate(90deg);
+}
+.faq .btn-link:after,
+.faq .btn-link:before {
+    background: #007bff;
+}
+.faq .btn-link:before {
+    transform-origin: center;
+    transform: rotate(90deg);
+}
+.faq .btn-link.collapsed {
+    color: #343a40;
+}
+.faq .btn-link:hover,
+.faq .btn-link:focus {
+    color: #007bff;
+    text-decoration: none;
+    text-decoration: none;
+}
+.faq .card-body {
+    padding: 0;
+    font-size: 12px;
+    color: #999;
+    padding-left: 25px;
+}
+
+/* CLASSES NAV */
+.classes-nav {
+    display: block;
+    background: #007bff;
+}
+.classes-nav ul {
+    border-bottom: none;
+}
+.classes-nav ul li.nav-item {
+    width: 20%;
+}
+.classes-nav ul li.nav-item a {
+    border: none;
+    text-align: center;
+    border-radius: 0;
+    background: none;
+    color: rgba(255,255,255,0.7);
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px 0px 14px 0px;
+    border-bottom: 1px solid transparent;
+}
+.classes-nav ul li.nav-item a:hover,
+.classes-nav ul li.nav-item a:focus {
+    border-bottom: 1px solid transparent;
+}
+.classes-nav ul li.nav-item a.active {
+    border-bottom: 1px solid #eee;
+    position: relative;
+}
+.classes-nav ul li.nav-item a.active:after {
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    border-right: 1px solid #eee;
+    transform-origin: center;
+    transform: rotate(45deg);
+    content: ' ';
+    z-index: 1;
+}
+
+/* CLASSES CONTAINER */
+.classes-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.classes-container h1 {
+    font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    margin: 0;
+}
+.classes-container .head-p {
+    font-size: 14px;
+    color: #999;
+    margin-top: 10px;
+}
+.class-stats {
+    display: block;
+    text-align: center;
+}
+.class-stats:not(:last-child) {
+    border-right: 1px solid #eee;
+}
+.class-stats img {
+    width: 64px;
+    display: block;
+    margin: auto;
+    opacity: 1;
+}
+.class-stats h3 {
+    display: block;
+    margin: 0px 0px;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    padding: 0px 25px;
+    cursor: default;
+}
+.class-stats p {
+    margin: 0;
+    font-size: 13px;
+    color: #999;
+}
+
+/* CLASS BOX */
+.class-box {
+    display: block;
+    position: relative;
+    background: #fff;
+    box-shadow: rgba(0,0,0,0.1) 0px 5px 15px;
+    border-radius: 4px;
+    -webkit-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    margin-top: 30px;
+}
+.class-box.active {
+    box-shadow: rgba(0,0,0,0.3) 0px 5px 20px;
+    opacity: 1;
+    transform: scale(1.05);
+}
+.class-box.inactive {
+    opacity: 0.3;
+    filter: grayscale(100%);
+}
+.class-box .class-box-image {
+    display: block;
+    width:100%;
+    height: 150px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.class-box .class-box-title {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px 10px 5px 10px;
+}
+.class-box .class-box-description {
+    display: block;
+    font-size: 12px;
+    color: #999;
+    padding: 0px 10px 5px 10px;
+}
+.class-box .class-box-places {
+    display: block;
+    padding: 0px 10px 10px 10px;
+    font-weight: bold;
+    font-size: 12px;
+}
+.class-box .class-box-places.booked {
+    opacity: 0.3;
+}
+.class-box .class-box-places.danger {
+    color: #ff0000;
+}
+.class-box .class-box-places img {
+    width: 16px;
+    filter: brightness(0);
+}
+.class-box .class-box-places.danger img {
+    filter: none;
+}
+.class-box .class-box-start {
+    display: block;
+    padding: 0px 10px 10px 10px;
+}
+@media (max-width:768px) {
+    .navbar .nav-item > .nav-link {
+        padding: 10px 0px;
+    }
+    .navbar .form-inline {
+        margin: 0px !important;
+    }
+    .main {
+        padding: 150px 0px 120px 0px;
+    }
+    .main .btn-default {
+        padding: 0px;
+        margin-top: 15px;
+    }
+    .main h1 {
+        font-size: 48px;
+    }
+    .features {
+        padding-top: 50px;
+    }
+    .features img {
+        margin-top: 30px;
+    }
+    .reviews .review p {
+        font-size: 14px;
+        padding: 0px;
+    }
+    .reviews .arrow {
+        font-size: 20px;
+    }
+    .faq .btn-primary {
+        margin-bottom: 50px;
+    }
+    .faq .btn-link {
+        white-space: normal;
+    }
+    .main.v2 p.lead {
+        font-size: 14px;
+    }
+    .classes-container h1 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .classes-container .head-p {
+        font-size: 11px;
+    }
+    .class-stats img {
+        width: 32px;
+    }
+    .class-stats h3 {
+        font-size: 18px;
+    }
+    .class-stats {
+        margin-bottom: 10px;
+    }
+    .class-stats p {
+        font-size: 11px;
+    }
+    .classes-nav ul li.nav-item {
+        width: calc(100% / 2);
+    }
+    .classes-nav ul li.nav-item a.active:after {
+        display: none;
+    }
+    .classes-nav {
+        padding: 15px 0px;
+    }
+}
