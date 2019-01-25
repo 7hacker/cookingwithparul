@@ -11,7 +11,7 @@
     <meta name="author" content="Filip Todorov">
     
     <!-- Page settings -->
-    <title>Cooking with Parul | Learn to cook delicious Indian food</title>
+    <title>Paruls kitchen | Learn to cook delicious Indian food</title>
     <link rel="icon" href="img/favicon.png">
 
     <!-- Bootstrap core CSS -->
@@ -24,14 +24,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="fixed-footer">
 
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
             <!-- Navbar Brand -->
             <a class="navbar-brand" href="index.html">
                 <img src="img/cooking.png"><!--
-             --><span>Cooking with Parul</span>
+             --><span>Paruls kitchen</span>
             </a>
             
             <!-- Mobile Toggler -->
@@ -50,6 +50,9 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Catering</a>
                     </li>
                 </ul>
                 <div class="form-inline my-2 my-lg-0 ml-3">
@@ -98,75 +101,25 @@
         </div>
     </div>
     
-    <!-- Nav tabs -->
-    <div class="classes-nav">
-      <div class="container">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-              <li class="nav-item">
-                  <a class="nav-link active" id="northindian-tab" data-toggle="tab" href="#northindian" role="tab" aria-controls="northindian" aria-selected="true">North Indian</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="southindian-tab" data-toggle="tab" href="#southindian" role="tab" aria-controls="southindian" aria-selected="false">South Indian</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="streetfood-tab" data-toggle="tab" href="#streetfood" role="tab" aria-controls="streetfood" aria-selected="false">Street Food, Chaats</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="gujarati-tab" data-toggle="tab" href="#gujarati" role="tab" aria-controls="gujarati" aria-selected="false">Gujarati Cuisine</a>
-              </li>
-              <li class="nav-item">
-                  <a class="nav-link" id="festivals-tab" data-toggle="tab" href="#festivals" role="tab" aria-controls="festivals" aria-selected="false">Festivals</a>
-              </li>
-          </ul>
-      </div>
-    </div>
-    
     <!-- Tab panes -->
+    <div style="background: #fff;">
     <div class="container classes-container">
         <div class="tab-content">
             <div class="tab-pane active" id="northindian" role="tabpanel" aria-labelledby="northindian-tab">
                 <div class="row">
-                    <div class="col-md-6 col-7">
-                        <h1>North Indian</h1>
-                        <p class="head-p">North Indian cuisine is a part of Indian cuisine, from the region of Northern India which includes the Pakistani provinces: Punjab, AJK and Indian states and union territories: Jammu and Kashmir, Punjab.</p>
-                    </div>
-                    <div class="col-md-6 col-5">
-                        <div class="row">
-                            <div class="col-sm-4 ml-auto class-stats">
-                                <img src="img/icons/003-dish.png">
-                                <h3>15</h3>
-                                <p>Classes Available</p>
-                            </div>
-                            <div class="col-sm-4 class-stats">
-                                <img src="img/icons/002-breakfast.png">
-                                <h3>5</h3>
-                                <p>Termins per Week</p>
-                            </div>
-                        </div>
+                    <div class="col-md-9 col-9">
+                        <h1>Classes and Catering</h1>
+                        <p class="head-p">I offer cooking classes from many regions in India. Each class has upto 20 different dishes and we will learn to cook 4 of your choice. Reserve a class and I will email you a catalog of all dishes to choose from.<br>I also cater Indian Sweets, Desserts and Snacks for festivals or a special ocassion of yours like a party, birthday, anniversary. You can also reserve a date for your catering needs.</p>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col-sm-3">
                         <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
+                            <div class="class-box-image" style="background: url('img/paneer_2.jpg') center no-repeat;background-size: cover;"></div>
+                            <div class="class-box-title">North Indian</div>
                             <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
+                                Creamy, Rich and Delicate foods of the North.
                             </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
                             <div class="class-box-start">
                                 <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
                             </div>
@@ -175,11 +128,10 @@
                     <div class="col-sm-3">
                         <div class="class-box">
                             <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
+                            <div class="class-box-title">South Indian</div>
                             <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
+                                Vibrant, Colorful and Spicy foods of the South.
                             </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
                             <div class="class-box-start">
                                 <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
                             </div>
@@ -187,25 +139,11 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
+                            <div class="class-box-image" style="background: url('img/ic_1.jpg') center no-repeat;background-size: cover;"></div>
+                            <div class="class-box-title"> Indian Chinese</div>
                             <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
+                                The Indian take on Chinese cuisine, spiced up and saucy.
                             </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
                             <div class="class-box-start">
                                 <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
                             </div>
@@ -213,25 +151,23 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
+                            <div class="class-box-image" style="background: url('img/chaat_3.jpg') center no-repeat;background-size: cover;"></div>
+                            <div class="class-box-title">Chaats</div>
                             <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
+                                 Its crunchy, salty, sweet and spicy! Indian street foods are a crowd favourite!
                             </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
                             <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
+                                <a href="#" class="btn btn-primary btn-block ">Reserve Place</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
+                            <div class="class-box-image" style="background: url('img/gj.jpg') center no-repeat;background-size: cover;"></div>
+                            <div class="class-box-title">Gujarati</div>
                             <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
+                                Authentic foods of Gujarat, my home region, spicy and sweet at the same time.
                             </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
                             <div class="class-box-start">
                                 <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
                             </div>
@@ -239,524 +175,23 @@
                     </div>
                     <div class="col-sm-3">
                         <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
+                            <div class="class-box-image" style="background: url('img/rasg.jpg') center no-repeat;background-size: cover;"></div>
+                            <div class="class-box-title">Sweets</div>
                             <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
+                                 Learn the secrets of making Indian desserts. I’ve perfected many classic Indian desserts over the years.
                             </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 20 places left</div>
                             <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="southindian" role="tabpanel" aria-labelledby="southindian-tab">
-                <div class="row">
-                    <div class="col-md-6 col-7">
-                        <h1>South Indian</h1>
-                        <p class="head-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus accusamus asperiores necessitatibus cupiditate nemo eos, ratione vero cumque temporibus veritatis quibusdam quos iure, odit illo perspiciatis, nihil voluptatem facere repudiandae..</p>
-                    </div>
-                    <div class="col-md-6 col-5">
-                        <div class="row">
-                            <div class="col-sm-4 ml-auto class-stats">
-                                <img src="img/icons/003-dish.png">
-                                <h3>5</h3>
-                                <p>Classes Available</p>
-                            </div>
-                            <div class="col-sm-4 class-stats">
-                                <img src="img/icons/002-breakfast.png">
-                                <h3>2</h3>
-                                <p>Termins per Week</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
+                                <a href="#" class="btn btn-primary btn-block ">Reserve Place</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-3">
                         <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
+                            <div class="class-box-image" style="background: url('img/banana_leaf_meal.jpg') center no-repeat;background-size: cover;"></div>
+                            <div class="class-box-title">Catering</div>
                             <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
+                                Choose a date for catering and I’ll follow up to work with your requirements.
                             </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 20 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="streetfood" role="tabpanel" aria-labelledby="streetfood-tab">
-                <div class="row">
-                    <div class="col-md-6 col-7">
-                        <h1>Street Food, Chaats</h1>
-                        <p class="head-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus accusamus asperiores necessitatibus cupiditate nemo eos, ratione vero cumque temporibus veritatis quibusdam quos iure, odit illo perspiciatis, nihil voluptatem facere repudiandae..</p>
-                    </div>
-                    <div class="col-md-6 col-5">
-                        <div class="row">
-                            <div class="col-sm-4 ml-auto class-stats">
-                                <img src="img/icons/003-dish.png">
-                                <h3>2</h3>
-                                <p>Classes Available</p>
-                            </div>
-                            <div class="col-sm-4 class-stats">
-                                <img src="img/icons/002-breakfast.png">
-                                <h3>15</h3>
-                                <p>Termins per Week</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 20 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="gujarati" role="tabpanel" aria-labelledby="gujarati-tab">
-                <div class="row">
-                    <div class="col-md-6 col-7">
-                        <h1>Gujarati Cuisine</h1>
-                        <p class="head-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus accusamus asperiores necessitatibus cupiditate nemo eos, ratione vero cumque temporibus veritatis quibusdam quos iure, odit illo perspiciatis, nihil voluptatem facere repudiandae..</p>
-                    </div>
-                    <div class="col-md-6 col-5">
-                        <div class="row">
-                            <div class="col-sm-4 ml-auto class-stats">
-                                <img src="img/icons/003-dish.png">
-                                <h3>10</h3>
-                                <p>Classes Available</p>
-                            </div>
-                            <div class="col-sm-4 class-stats">
-                                <img src="img/icons/002-breakfast.png">
-                                <h3>1</h3>
-                                <p>Termin per Week</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 20 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tab-pane" id="festivals" role="tabpanel" aria-labelledby="festivals-tab">
-                <div class="row">
-                    <div class="col-md-6 col-7">
-                        <h1>Festivals</h1>
-                        <p class="head-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus accusamus asperiores necessitatibus cupiditate nemo eos, ratione vero cumque temporibus veritatis quibusdam quos iure, odit illo perspiciatis, nihil voluptatem facere repudiandae..</p>
-                    </div>
-                    <div class="col-md-6 col-5">
-                        <div class="row">
-                            <div class="col-sm-4 ml-auto class-stats">
-                                <img src="img/icons/003-dish.png">
-                                <h3>15</h3>
-                                <p>Classes Available</p>
-                            </div>
-                            <div class="col-sm-4 class-stats">
-                                <img src="img/icons/002-breakfast.png">
-                                <h3>15</h3>
-                                <p>Termins per Week</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg4.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places danger"><img src="img/icons/users.png"> 1 place left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Chicken in Curry Sauce</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places booked"><img src="img/icons/users.png"> Fully Booked</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block disabled">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg2.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 2 places left</div>
-                            <div class="class-box-start">
-                                <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="class-box">
-                            <div class="class-box-image" style="background: url('img/bg3.jpg') center no-repeat;background-size: cover;"></div>
-                            <div class="class-box-title">Making the perfect Rice with Meat</div>
-                            <div class="class-box-description">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit laudantium quasi eius, nisi animi ducimus.
-                            </div>
-                            <div class="class-box-places"><img src="img/icons/users.png"> 20 places left</div>
                             <div class="class-box-start">
                                 <a href="#" class="btn btn-primary btn-block">Reserve Place</a>
                             </div>
@@ -766,12 +201,20 @@
             </div>
         </div>
     </div>
+    </div>
     
-    <div class="partners">
+    <div class="partners" style="padding-top: 40px;">
         <div class="container">
             <div class="row">
-                <div class="col-sm-10 ml-auto mr-auto">
-                    <img src="img/partners.jpg" class="img-fluid">
+                <div class="col-md-10 ml-auto mr-auto">
+                    <div class="row">
+                        <div class="col-sm-4 ml-auto mr-auto">
+                            <a href="https://www.urbanpro.com/bangalore/parul-thacker/4024269" target="_blank"><img src="img/badge-1.png" class="img-fluid"></a>
+                        </div>
+                        <div class="col-sm-4 mr-auto mr-auto">
+                            <a href="https://www.urbanpro.com/bangalore/parul-thacker/4024269" target="_blank"><img src="img/badge-2.png" class="img-fluid"></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -780,12 +223,11 @@
     <footer>
         <div class="container">
             <div class="pull-left">
-                Cooking with Paul &copy; 2018 All Rights Reserved
+                Paruls kitchen &copy; 2018 All Rights Reserved
             </div>
-            <ul class="pull-right">
-                <li><a href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-fw fa-instagram"></i></a></li>
+            <ul class="pull-left">
+                <li><a href="https://www.facebook.com/Parulskitchen-315349879104330/"><i class="fa fa-fw fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/cheeni.kum.foods/"><i class="fa fa-fw fa-instagram"></i></a></li>
             </ul>
             <div class="clearfix"></div>
         </div>
@@ -827,6 +269,14 @@
                 e.preventDefault();
                 $(".calendly-badge-content").click();
             })
+            
+            let max = 0;
+            $(".class-box-description").each(function() {
+                if($(this).outerHeight() > max) {
+                    max = $(this).outerHeight();
+                }
+            });
+            $(".class-box-description").css("height", max);
         })
     </script>
     

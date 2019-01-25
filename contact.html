@@ -11,7 +11,7 @@
     <meta name="author" content="Filip Todorov">
     
     <!-- Page settings -->
-    <title>Cooking with Parul | Learn to cook delicious Indian food</title>
+    <title>Paruls kitchen | Learn to cook delicious Indian food</title>
     <link rel="icon" href="img/favicon.png">
 
     <!-- Bootstrap core CSS -->
@@ -24,14 +24,14 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="fixed-footer">
 
     <nav class="navbar navbar-expand-md navbar-dark">
         <div class="container">
             <!-- Navbar Brand -->
             <a class="navbar-brand" href="index.html">
                 <img src="img/cooking.png"><!--
-             --><span>Cooking with Parul</span>
+             --><span>Paruls kitchen</span>
             </a>
             
             <!-- Mobile Toggler -->
@@ -51,6 +51,9 @@
                     <li class="nav-item active">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Catering</a>
+                    </li>
                 </ul>
                 <div class="form-inline my-2 my-lg-0 ml-3">
                     <a class="btn btn-primary my-2 my-sm-0" href="classes.html">Get Started</a>
@@ -65,22 +68,26 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h1>Contact Us</h1>
-                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis culpa saepe laudantium veritatis repudiandae odio iure incidunt eligendi, nam praesentium.</p>
+                    <p class="lead">You can reach out for Event Catering in Bangalore, Custom classes of your choice or any other information. I also take special orders for Sweets, Desserts, Snacks for Festivals or your special occasion.</p>
                 </div>
                 <div class="col-md-4 ml-auto">
-                    <form action="#" method="post">
+                    <form action="https://formspree.io/contact@parulskitchen.in" method="post">
                         <p>Write your message below, and we will respond to you within 24 - 48 hours. Please be clear as much as possible, and enter valid contact information.</p>
                         <div class="form-group">
                             <label>Your Name</label>
-                            <input type="text" class="form-control" required>
+                            <input type="text" name="name" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Your Email</label>
-                            <input type="text" class="form-control" required>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Phone</label>
+                            <input type="text" name="phone" class="form-control" required>
                         </div>
                         <div class="form-group">
                             <label>Message</label>
-                            <textarea class="form-control" required></textarea>
+                            <textarea class="form-control" name="message" required></textarea>
                         </div>
                         <input type="submit" class="btn btn-primary" value="Send Message">
                     </form>
@@ -92,12 +99,11 @@
     <footer>
         <div class="container">
             <div class="pull-left">
-                Cooking with Paul &copy; 2018 All Rights Reserved
+                Paruls kitchen &copy; 2018 All Rights Reserved
             </div>
-            <ul class="pull-right">
-                <li><a href="#"><i class="fa fa-fw fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fa fa-fw fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fa fa-fw fa-instagram"></i></a></li>
+            <ul class="pull-left">
+                <li><a href="https://www.facebook.com/Parulskitchen-315349879104330/"><i class="fa fa-fw fa-facebook"></i></a></li>
+                <li><a href="https://www.instagram.com/cheeni.kum.foods/"><i class="fa fa-fw fa-instagram"></i></a></li>
             </ul>
             <div class="clearfix"></div>
         </div>

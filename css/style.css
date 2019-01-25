@@ -10,6 +10,9 @@ body, html {
     font-family: sans-serif;
     position: relative;
 }
+body.fixed-footer {
+    background: #343a40;
+}
 
 /* NAVIGATION */
 .navbar.navbar-dark {
@@ -103,6 +106,17 @@ body, html {
     z-index: 1;
     background: #000;
     opacity: 0.5;
+}
+.main.home:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: #000;
+    opacity: 0.5;
+    content: ' ';
 }
 .main .container {
     position: relative;
@@ -231,6 +245,10 @@ body, html {
     background: #f2f2f2;
     text-align: center;
 }
+.reviews .owl-carousel .owl-stage {
+    display: flex;
+    align-items: center;
+}
 .reviews .review p {
     font-size: 17px;
     font-weight: 400;
@@ -261,6 +279,12 @@ body, html {
 .reviews .arrow:focus {
     opacity: 0.6;
 }
+.reviews .btn {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+    white-space: normal;
+}
 .partners {
     display: block;
     padding: 0px 0px 40px 0px;
@@ -281,6 +305,8 @@ footer ul {
     list-style: none;
     display: block;
     text-align: right;
+    margin-left: 16px;
+    border-left: 1px solid rgba(255,255,255,0.25);
 }
 footer ul li {
     display: inline-block;
@@ -551,7 +577,7 @@ footer ul li a:focus {
         margin-top: 15px;
     }
     .main h1 {
-        font-size: 48px;
+        font-size: 38px;
     }
     .features {
         padding-top: 50px;
@@ -565,6 +591,7 @@ footer ul li a:focus {
     }
     .reviews .arrow {
         font-size: 20px;
+        display: none;
     }
     .faq .btn-primary {
         margin-bottom: 50px;
@@ -602,5 +629,21 @@ footer ul li a:focus {
     }
     .classes-nav {
         padding: 15px 0px;
+    }
+    .partners .col-sm-3 {
+        width: 50%;
+    }
+    footer {
+        padding-bottom: 80px;
+    }
+    .navbar.navbar-dark {
+        position: fixed;
+    transform: translateY(0px);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #343a40;
+    }
+    .navbar.navbar-dark.scrolled {
+        transform: translateY(0px);
     }
 }
