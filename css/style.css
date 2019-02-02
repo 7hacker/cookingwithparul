@@ -29,6 +29,13 @@ body.fixed-footer {
     width: 100%;
     z-index: 9;
 }
+
+/*.navbar-brand {
+    font-size: 1.65rem;
+    line-height: inherit;
+    white-space: nowrap;
+}*/
+
 .navbar.navbar-dark.scrolled {
     transform: translateY(-50px);
 }
@@ -218,7 +225,7 @@ body.fixed-footer {
     text-align: center;
 }
 .features img {
-    width: 128px;
+    width: 92px;
     margin: auto;
     display: block;
 }
